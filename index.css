@@ -65,6 +65,7 @@ body .border .montanar .unlock {
 body .border .navbar {
   width: 85%;
   height: 100px;
+  background-color: rgba(0, 0, 0, 0.674);
   position: fixed;
   top: 5px;
   display: flex;
@@ -225,7 +226,7 @@ body .border .navbar .bar:hover {
   }
 }
 body .border .navbar .downdiv {
-  width: 95%;
+  width: 100%;
   transform: translateY(-280px);
   position: absolute;
   top: 70px;

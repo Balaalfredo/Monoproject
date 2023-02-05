@@ -69,6 +69,7 @@ body {
         .navbar {
             width: 85%;
             height: 100px;
+            background-color: rgba(0, 0, 0, 0.674);
             // border: 1px solid white;
             position: fixed;
             top: 5px;
@@ -199,7 +200,7 @@ body {
             }
 
             .downdiv {
-                width: 95%;
+                width: 100%;
                 // height: 200px;
                 transform: translateY(-280px);
                 // visibility: hidden;
