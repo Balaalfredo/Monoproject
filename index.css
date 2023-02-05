@@ -65,7 +65,7 @@ body .border .montanar .unlock {
 body .border .navbar {
   width: 85%;
   height: 100px;
-  position: absolute;
+  position: fixed;
   top: 5px;
   display: flex;
   align-items: center;
@@ -207,7 +207,11 @@ body .border .navbar .book .div2 .bookaroom:hover {
 body .border .navbar .bar {
   width: 20%;
   height: 98%;
+  cursor: pointer;
   display: none;
+}
+body .border .navbar .bar:hover {
+  color: #009DFF;
 }
 @media (max-width: 998px) {
   body .border .navbar .bar {
@@ -219,6 +223,32 @@ body .border .navbar .bar {
     font-size: 1.8em;
     flex-wrap: nowrap;
   }
+}
+body .border .navbar .downdiv {
+  width: 95%;
+  transform: translateY(-280px);
+  position: absolute;
+  top: 70px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.674);
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+  display: none;
+}
+@media (max-width: 998px) {
+  body .border .navbar .downdiv {
+    display: block;
+  }
+}
+body .border .navbar .downdiv p {
+  padding: 10px;
+}
+body .border .navbar .selectdown {
+  transition: 0.5s;
+  transform: translateY(0px);
 }
 body .border0 {
   display: flex;

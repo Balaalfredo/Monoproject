@@ -70,7 +70,7 @@ body {
             width: 85%;
             height: 100px;
             // border: 1px solid white;
-            position: absolute;
+            position: fixed;
             top: 5px;
             @include display($jus: space-between);
 
@@ -185,12 +185,49 @@ body {
 
                 width: 20%;
                 height: 98%;
+                cursor: pointer;
                 display: none;
                 // border: 1px solid white;
+
+                &:hover {
+                    color: #009DFF;
+                }
 
                 @media(max-width:998px) {
                     @include display($font-size: 1.8em, $color: white);
                 }
+            }
+
+            .downdiv {
+                width: 95%;
+                // height: 200px;
+                transform: translateY(-280px);
+                // visibility: hidden;
+                // height: 50px;
+                // border: 1px solid gold;
+                position: absolute;
+                top: 70px;
+                display: flex;
+                background-color: rgba(0, 0, 0, 0.674);
+                border-radius: 15px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: 0.5s;
+                display: none;
+
+                @media(max-width:998px) {
+                    display: block;
+                }
+
+                p {
+                    padding: 10px;
+                }
+            }
+
+            .selectdown {
+                transition: 0.5s;
+                transform: translateY(0px);
             }
         }
     }
